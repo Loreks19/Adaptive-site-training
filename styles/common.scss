@@ -1,0 +1,91 @@
+@use "./variables.scss";
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family: variables.$font-family;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding:0;
+    width: 100%;
+}
+.page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 124rem;
+    padding-top: 6rem;
+
+    @media all and (max-width: variables.$media-m) {
+        padding-top: 3rem;
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: variables.$font-family;
+    font-weight: variables.$weight-medium;
+    margin:0;
+}
+
+h1 {
+    font-size: variables.$size-h1;
+
+    @media all and (max-width: variables.$media-s) {
+        font-size: variables.$size-h1-mob;
+    }
+}
+
+h2 {
+    font-size: variables.$size-h2;
+
+    @media all and (max-width: variables.$media-s) {
+        font-size: variables.$size-h2-mob;
+    }
+}
+
+h3 {
+    font-size: variables.$size-h3;
+
+    @media all and (max-width: variables.$media-s) {
+        font-size: variables.$size-h3-mob;
+    }
+}
+
+h4 {
+    font-size: variables.$size-h4;
+
+    @media all and (max-width: variables.$media-s) {
+        font-size: variables.$size-h4-mob;
+    }
+}
+
+p {
+    font-size: variables.$size-p;
+    margin: 0;
+    @media all and (max-width: variables.$media-s) {
+        font-size: variables.$size-p-mob;
+    }
+}
+
+.partners {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem 5rem;
+    width: 100%;
+
+    @media all and (max-width: variables.$media-m) {
+        column-gap: 3rem;
+    }
+
+    img {
+        filter:grayscale(100);
+
+    }
+}

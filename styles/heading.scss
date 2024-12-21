@@ -1,0 +1,33 @@
+@use "./variables.scss" as vars;
+
+.heading {
+    span{
+        display: inline-block;
+        border-radius: 0.7rem;
+        padding: 0 0.7rem;
+    }
+
+    &_bg {
+        &_white {
+            span {
+                background-color: vars.$color-white;
+            }
+        }
+
+        &_green {
+            span {
+                background-color: vars.$color-green;
+            }
+        }
+
+        &_black{
+            span {
+                background-color: vars.$color-black;
+                color: vars.$color-white;
+            }
+        }
+    }
+    &_width{
+        max-width: 30rem !important;
+    }
+}

@@ -1,0 +1,54 @@
+@use "./variables.scss" as vars;
+
+.faq {
+    &_content {
+        border-radius: vars.$radius-card;
+        border: 1px solid vars.$color-dark;
+        box-shadow: 0 5px 0 0 vars.$color-dark;
+
+        padding: 5rem;
+
+        width: 100%;
+        min-height: 15.9rem;
+        display:flex;
+        justify-content: space-between;
+        background-color: vars.$color-grey;
+
+        @media all and (max-width: vars.$media-m){
+
+        }
+    }
+
+    &_left{
+        display: flex;
+        gap:2rem;
+        align-items: center;
+    }
+
+    &__number{
+        font-size: 6rem;
+    }
+
+    &__text{
+        font-size: 3rem;
+        text-align: center;
+        font-weight: vars.$weight-medium;
+    }
+
+    &_item {
+        
+        &_plus[aria-expanded='true'] + &_answer {
+            opacity: 1;
+            max-height: 9em;
+            transition: all 200ms linear;
+            will-change: opacity, max-height;
+        }
+        &_answer {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 200ms linear, max-height 200ms linear;;
+            will-change: opacity, max-height;
+        }
+    }
+}

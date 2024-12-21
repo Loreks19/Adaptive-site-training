@@ -9,19 +9,233 @@
 <body>
     <div class="page">
         <header class="header">
-            <img src="./logo.png" alt="logo" class="logo">
-            <nav class="active">
-                <a href="">About us</a>
-                <a href="">Services</a>
-                <a href="">Use Cases</a>
-                <a href="">Prising</a>
-                <a href="">Blog</a>
+            <img src="./logo.png" alt="logo" class="logo logo_header">
+            <nav class="nav nav_header nav_active">
+                <a class="nav__link" href="">About us</a>
+                <a class="nav__link" href="">Services</a>
+                <a class="nav__link" href="">Use Cases</a>
+                <a class="nav__link" href="">Prising</a>
+                <a class="nav__link" href="">Blog</a>
             </nav>
-            <button>Request a quote</button>
+            <button class="btn btn_header btn_outline">Request a quote</button>
             <div class="menu">
-                <img src="./paragraph-justify.png" alt="burger" class="burger-icon">
+                <img class="menu__icon" src="./paragraph-justify.png" alt="burger" class="burger-icon">
             </div>
         </header>
+        
+        <section class="section section_first">
+            <div class="section__container">
+                <h1>Navigating the digital landscape for success</h1>
+                <img src="./assets/icons/Illustration.svg" alt="" class="section__img" />
+                <p>Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
+                <button class="btn btn_primary">Book a consultation</button>
+            </div>
+
+            <div class="partners">
+                <img src="/assets/icons/Companylogo.svg" alt="">
+                <img src="/assets/icons/Companylogo-1.svg" alt=""> 
+                <img src="/assets/icons/Companylogo-2.svg" alt=""> 
+                <img src="/assets/icons/Companylogo-3.svg" alt=""> 
+                <img src="/assets/icons/Companylogo-4.svg" alt=""> 
+                <img src="/assets/icons/Companylogo-5.svg" alt="">  
+            </div>
+        </section>
+
+        <section class="section section_second">
+            <div class="section__header">
+                <h2 class="heading heading_bg_green"><span>Services</span></h2>
+                <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
+            </div>
+            <div class="section__cards">
+                <div class="card card_service">
+                    <h3 class="heading heading_bg_green">
+                        <span>Search engine</span><span>optimization</span></h3>
+                    <a href="" class="link link_round link_icon_green">
+                        <span class="link__decor">
+                            <svg class="link__icon">
+                                <use xlink:href="/assets/icons/sprite.svg#arrow" />
+                            </svg> </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                    <img src="./assets/img/tokyo-magnifier-web-search-with-elements2.png" srcset="./assets/img/tokyo-magnifier-web-search-with-elements2@2x.png 2x" alt="" class="card__img">
+                </div>
+                <div class="card card_service card_bg_green">
+                    <h3 class="heading heading_bg_white">
+                        <span>Pay-per-click</span><span>advertising</span></h3>
+                    <a href="" class="link link_round link_icon_green">
+                        <span class="link__decor">
+                            <svg class="link__icon">
+                                <use xlink:href="/assets/icons/sprite.svg#arrow" />
+                            </svg> </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                    <img src="./assets/img/tokyo-selecting-a-value-in-the-browser-window1.png" srcset="./assets/img/tokyo-selecting-a-value-in-the-browser-window1@2x.png 2x" alt="" class="card__img">
+                </div>
+                <div class="card card_service card_bg_dark">
+                    <h3 class="heading heading_bg_white">
+                        <span>Social Media</span><span>Marketing</span></h3>
+                    <a href="" class="link link_round link_icon_black link_color_white">
+                        <span class="link__decor link__decor_white">
+                            <svg class="link__icon">
+                                <use xlink:href="/assets/icons/sprite.svg#arrow" />
+                            </svg> </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                    <img src="./assets/img/tokyo-browser-window-with-emoticon-likes-and-stars-around2.png" srcset="./assets/img/tokyo-browser-window-with-emoticon-likes-and-stars-around2@2x.png 2x" alt="" class="card__img">
+                </div>
+                <div class="card card_service">
+                    <h3 class="heading heading_bg_green">
+                        <span>Email</span><span>Marketing</span></h3>
+                    <a href="" class="link link_round link_icon_green">
+                        <span class="link__decor">
+                            <svg class="link__icon">
+                                <use xlink:href="/assets/icons/sprite.svg#arrow" />
+                            </svg> </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                    <img src="./assets/img/tokyo-sending-messages-from-one-place-to-another1.png" srcset="./assets/img/tokyo-sending-messages-from-one-place-to-another1@2x.png 2x" alt="" class="card__img">
+                </div>
+                <div class="card card_service card_bg_green">
+                    <h3 class="heading heading_bg_white">
+                        <span>Content</span><span>Creation</span></h3>
+                    <a href="" class="link link_round link_icon_green">
+                        <span class="link__decor">
+                            <svg class="link__icon">
+                                <use xlink:href="/assets/icons/sprite.svg#arrow" />
+                            </svg> </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                    <img src="./assets/img/tokyo-many-browser-windows-with-different-information1.png" srcset="./assets/img/tokyo-many-browser-windows-with-different-information1@2x.png 2x" alt="" class="card__img">
+                </div>
+                <div class="card card_service card_bg_dark">
+                    <h3 class="heading heading_bg_green">
+                        <span>Analytics and </span><span>Tracking</span></h3>
+                    <a href="" class="link link_round link_icon_black link_color_white">
+                        <span class="link__decor link__decor_white">
+                            <svg class="link__icon">
+                                <use xlink:href="/assets/icons/sprite.svg#arrow" />
+                            </svg> </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                    <img src="./assets/img//tokyo-volumetric-analytics-of-different-types-in-web-browsers2.png" srcset="./assets/img/tokyo-volumetric-analytics-of-different-types-in-web-browsers2@2x.png 2x" alt="" class="card__img">
+                </div>
+            </div>
+            <div class="card card_proposal">
+                <h3>Let’s make things happen</h3>
+                <p>Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
+                <button class="btn btn_primary">Get your free proposal</button>
+                <img src="./assets/icons/Frame19.svg" alt="" />
+            </div>
+        </section>
+        <section class="section section_third">
+            <div class="section__header">
+                <h2 class="heading heading_bg_green"><span>Case Studies</span></h2>
+                <p>Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
+            </div>
+            <div class="section__info">
+                <div class="card card_info">
+                    <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
+                    <a href="#" class="link link_color_green link_icon_green">
+                        <span class="link__text">Learn more</span>
+                        <span class="link__icon">
+                            <svg class="link__icon">
+                                <use xlink:href="./assets/icons/sprite.svg#arrow" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="card card_info">
+                    <p>For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.</p>
+                    <a href="#" class="link link_color_green link_icon_green">
+                        <span class="link__text">Learn more</span>
+                        <span class="link__icon">
+                            <svg class="link__icon">
+                                <use xlink:href="./assets/icons/sprite.svg#arrow" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="card card_info">
+                    <p>For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.</p>
+                    <a href="#" class="link link_color_green link_icon_green">
+                        <span class="link__text">Learn more</span>
+                        <span class="link__icon">
+                            <svg class="link__icon">
+                                <use xlink:href="./assets/icons/sprite.svg#arrow" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section section_fourth">
+            <div class="section__header">
+                <h2 class="heading heading_bg_green"><span>Our Working Process</span></h2>
+                <p class="heading heading_width">Step-by-Step Guide to Achieving Your Business Goals</p>
+            </div>
+            <div class="section__faqs">
+                <div class="faq faq_content">
+                    <div class="faq faq_left">
+                        <span class="faq__number">01</span>
+                        <span class="faq__text">Consultation</span>
+                    </div>
+                    <div class="faq faq_right">
+                        <div iclass="icon icon_plus"></div>
+                    </div>
+                </div>
+                <div class="faq faq_item">
+                    <div class="faq faq_content">
+                        <div class="faq faq_left">
+                            <span class="faq__number">02</span>
+                            <span class="faq__text">Research and Strategy Development</span>
+                        </div>
+                        <div class="faq faq_right">
+                            <div class="icon icon_plus"></div>
+                        </div>
+                    </div>
+                    <div class="faq faq_answer">
+                        <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                    </div>
+                </div>
+                <div class="faq faq_content">
+                    <div class="faq faq_left">
+                        <span class="faq__number">03</span>
+                        <span class="faq__text">Implementation</span>
+                    </div>
+                    <div class="faq faq_right">
+                        <div class="icon icon_plus"></div>
+                    </div>
+                </div>
+                <div class="faq faq_content">
+                    <div class="faq faq_left">
+                        <span class="faq__number">04</span>
+                        <span class="faq__text">Monitoring and Optimization</span>
+                    </div>
+                    <div class="faq faq_right">
+                        <div class="icon icon_plus"></div>
+                    </div>
+                </div>
+                <div class="faq faq_content">
+                    <div class="faq faq_left">
+                        <span class="faq__number">05</span>
+                        <span class="faq__text">Reporting and Communication</span>
+                    </div>
+                    <div class="faq faq_right">
+                        <div class="icon icon_plus"></div>
+                    </div>
+                </div>
+                <div class="faq faq_content">
+                    <div class="faq faq_left">
+                        <span class="faq__number">06</span>
+                        <span class="faq__text">Continual Improvement</span>
+                    </div>
+                    <div class="faq faq_right">
+                        <div class="icon icon_plus"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
+<script src="./script.js"></script>
 </html>

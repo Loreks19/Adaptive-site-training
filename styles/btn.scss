@@ -1,0 +1,69 @@
+@use "./variables.scss";
+
+.btn{
+    border-radius: 1.4rem;
+    padding: 2rem 3.5rem;
+    font-size: variables.$size-btn;
+    color: variables.$color-dark;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline-width: 0;
+
+    @media all and (max-width: variables.$media-m){
+        width: 100%;
+    }
+
+    @media (hover: hover){
+        transition: all 0.3s ease-out;
+
+        &:hover,
+        &:active {
+            transition: all 0.3s ease-in;
+        }
+    }
+    &_primary {
+        color: variables.$color-white;
+        background-color: variables.$color-dark;
+
+        @media (hover: hover){
+            &:hover,
+            &:active {
+                color: variables.$color-black;
+                background-color: variables.$color-green;
+            }
+        }
+    }
+
+    &_secondary {
+        background-color: variables.$color-green;
+
+        @media (hover: hover){
+            &:hover,
+            &:active {
+                color: variables.$color-white;
+                background-color: variables.$color-dark;
+            }
+        }
+    }
+
+    &_outline{
+        border: 1px solid variables.$color-dark;
+
+        @media (hover: hover){
+            &:hover,
+            &:active {
+                color: variables.$color-white;
+                background-color: variables.$color-dark;
+            }
+        }
+    }
+
+    &_header{
+        margin-left: 4rem;
+
+        @media all and (max-width: variables.$media-m){
+            display:none;
+        }
+    }
+}
